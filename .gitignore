@@ -18,6 +18,8 @@
 
 # IntelliJ
 out/
+/class
+/target
 .idea/
 *.iml
 modules.xml
