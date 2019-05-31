@@ -1,0 +1,32 @@
+<!--<configuration debug="true">-->
+<!--config for debugging logger-->
+
+<configuration>
+    <!--    timestamp for file names-->
+    <timestamp key="byDay" datePattern="yyyyMMdd'T'HHmmss"/>
+
+    <!--    config how and where to log - file-->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>log-${byDay}.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SS} %level [%thread] %-5level %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--    config how and where to log - console-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--    individual settings for registered logger-->
+    <logger name="vehicles.Car" level="INFO"/>
+
+    <!--    level of logging-->
+    <root level="warn">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>
