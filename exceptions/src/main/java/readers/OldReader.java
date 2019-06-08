@@ -6,7 +6,7 @@ public class OldReader {
     /**
      * Old style file reader (pre Java 7)
      */
-    public static String readFile(String fileName) {
+    public static String read(String fileName) {
         StringBuilder stringBuilder = new StringBuilder();
         BufferedReader bufferedReader = null;
         FileReader fileReader = null;
