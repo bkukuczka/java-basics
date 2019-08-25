@@ -1,0 +1,39 @@
+//        String greeting = "Hello World";
+//
+//        System.out.println(greeting);
+//
+//        char[] greetArray = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};
+//        String otherGreeting = new String(greetArray);
+//
+//        System.out.println(otherGreeting);
+//
+//        String hello = "Hello";
+//        String world = "World";
+//
+//        greeting = hello + " " + world;
+//        System.out.println(greeting);
+//
+//        greeting = "Hello" + " " + "World";
+//        System.out.println(greeting);
+//
+//        StringBuffer stringBuffer = new StringBuffer();
+//        greeting = stringBuffer.append("Hello")
+//                .append(" ")
+//                .append("World")
+//                .toString();
+//
+//        String name = "John";
+//        int age = 20;
+//        String introduction = String.format("My name is %s. I'm %d years old.",
+//                name, age);
+//
+//        System.out.println(introduction);
+//
+//
+//        Integer integerObj = 4;
+//
+//        Boolean booleanObj = true;
+//
+//        Character charObj = 'a';
+//
+//        sum(2, 5);

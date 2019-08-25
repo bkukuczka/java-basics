@@ -31,6 +31,7 @@ public class ModernReader {
     }
 
     private static void checkFile(String fileName) throws EmptyFileNameException {
+
         if (fileName.isEmpty()) {
             throw new EmptyFileNameException(
                     "File name cannot be empty");

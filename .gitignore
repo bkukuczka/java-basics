@@ -18,8 +18,9 @@
 
 # IntelliJ
 out/
-/class
-/target
+class/
+target/
+build/
 .idea/
 *.iml
 modules.xml

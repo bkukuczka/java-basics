@@ -10,7 +10,7 @@ public class TaxiService {
     }
 
     public Taxi orderTaxi(Point userLocation) {
-        Taxi mostOptimalTaxi = taxis[0];
+        Taxi mostOptimalTaxi = null;
         double mostOptimalTime = Double.MAX_VALUE;
 
         for (Taxi taxi : taxis) {

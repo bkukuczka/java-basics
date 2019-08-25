@@ -13,4 +13,4 @@ public class EuclidAlgorithm {
         }
         return bgc(numB, numA % numB);
     }
-
+}
