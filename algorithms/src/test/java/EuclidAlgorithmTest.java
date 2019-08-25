@@ -1,11 +1,10 @@
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class EuclidAlgorithmTest {
 
@@ -19,7 +18,7 @@ class EuclidAlgorithmTest {
 
     @ParameterizedTest
     @MethodSource("provideTestData")
-    void findBiggestCommonDivisor(int numberOne, int numberTwo, int expectedResult) {
+    void shouldReturnBiggestCommonDivisorWhenTwoNumbersProvided(int numberOne, int numberTwo, int expectedResult) {
         //when
         int result = EuclidAlgorithm.findBiggestCommonDivisor(numberOne, numberTwo);
 
